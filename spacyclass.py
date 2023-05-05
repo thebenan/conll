@@ -2,6 +2,32 @@ import spacy
 
 
 class ConllSpacyClass:
+    
+    def custom_tokenizer(nlp):
+        """
+        FONCTION DE YIMI //// ce n'est pas ma fonction 
+        -> utilisé seulement pour faire marcher correctement la fonction `fill_head_deprel_spacy`
+            (je n'ai pas trouvé d'autres solutions)
+        retourne une fonction lambda qui prend un texte en entrée et renvoie un objet Doc
+
+        Args:
+            nlp():  objet de spacy contenant le modèle NLP
+
+        Returns:
+            function: une fonction lambda qui prend un texte en entrée et renvoie un objet Doc
+        """
+        # définition de la fonction lambda qui sera retournée
+        # cette fonction prend un texte en entrée et renvoie un objet Doc
+        tokenizer = lambda text: (
+            # création d'un objet Doc à partir du vocabulaire du modèle NLP (nlp.vocab)
+            # et des mots extraits du texte en utilisant la méthode split()
+            Doc(nlp.vocab, words=text.split(' '),
+            # création d'une liste d'espaces pour chaque mot, en utilisant une liste de longueur
+            # égale au nombre de mots extraits du texte, dans laquelle chaque élément est True
+            spaces=[True] * len(text.split(' ')))
+        )
+        # retour de la fonction lambda créée
+        return tokenizer
 
     
     def fill_lemma_spacy(input_file:str)->str:
@@ -127,7 +153,7 @@ class ConllSpacyClass:
     
     
 
-    def fill_head_deprel_spacy(input_file:str)->str:
+    def fill_head_deprel_spacy(input_file:str,model:str)->str:
         """
         remplit les colonnes HEAD (7) et DEPREL (8) du fichier conllu avec spacy
 
@@ -137,7 +163,9 @@ class ConllSpacyClass:
         output: 
             str : fichier au format CoNLL-U avec les colonnes HEAD et DEPREL remplies
         """
-        nlp = spacy.load("fr_core_news_sm")
+        nlp = spacy.load(model)
+        nlp.tokenizer = ConllSpacyFichierClass.custom_tokenizer(nlp) 
+
 
         with open(input_file, "r", encoding="utf-8") as f:
             conll_string = f.read()
@@ -145,8 +173,10 @@ class ConllSpacyClass:
         token_lines = conll_string.strip().split("\n")
         token_list = [line.strip().split("\t") for line in token_lines]
 
+
         # récupération des dépendances syntaxiques avec spacy
         doc = nlp(" ".join([token[1] for token in token_list]))
+
         # association de chaque token avec son head et le deprel
         spacy_deps = [(token.i, token.head.i, token.dep_) for token in doc]
 
@@ -158,17 +188,18 @@ class ConllSpacyClass:
                 if head >= 0:
                     # remplir la colonne HEAD avec l'indice de la tête + 1
                     token_list[i][6] = str(head+1)
-                else:
-                    # sinon remplir la colonne HEAD avec 0
-                    token_list[i][6] = "0"
-
                 # remplir la colonne DEPREL
                 token_list[i][7] = deprel
+                # si la colonne 7 (DEPREL) est "ROOT", mettre "0" dans la colonne 6 (HEAD)
+                if token_list[i][7] == "ROOT":
+                    token_list[i][6] = "0"
+
 
         new_token_lines = ["\t".join(token) for token in token_list]
         new_conll_string = "\n".join(new_token_lines)
-
+        
         return new_conll_string
+
 
 
 
