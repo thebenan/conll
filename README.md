@@ -90,7 +90,7 @@ La classe `ConllStrSpacyClass` permet de remplir les colonnes du format CoNLL-U 
 
 
 
-## `ReadWrite`
+## `ReadWriteConll`
 Cette classe contient deux méthodes qui de lire et écrire un fichier CoNLL-U.
 
 -   `write_conll_file(conll_string: str, output_file: str) -> bool:`
