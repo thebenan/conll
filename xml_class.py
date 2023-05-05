@@ -113,7 +113,7 @@ class XmlToConllClass:
     def save_xml_to_conll(xml_file, xpath_formula, output_file):
         try:
             # tokenisation
-            conll_string = tokenize_xml(xml_file, xpath_formula)
+            conll_string = XmlToConllClass.tokenize_xml(xml_file, xpath_formula)
         except Exception as e:
             print(f"Une erreur s'est produite lors de la tokenisation XML : {e}")
             return # execution s'arrete s'il y a un erreur
