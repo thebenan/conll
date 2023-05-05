@@ -1,0 +1,120 @@
+1	Lors	lors	ADV	_		33	advmod	_	SpaceAfter=Yes|Offset=0
+2	de	de	ADP	_		5	case	_	SpaceAfter=Yes|Offset=5
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	SpaceAfter=Yes|Offset=8
+4	dernière	dernier	ADJ	_	Gender=Fem|NumType=Ord|Number=Sing	5	amod	_	SpaceAfter=Yes|Offset=11
+5	mobilisation	mobilisation	NOUN	_	Gender=Fem|Number=Sing	1	obl:arg	_	SpaceAfter=Yes|Offset=20
+6	du	de	ADP	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	case	_	SpaceAfter=Yes|Offset=33
+7	samedi	samedi	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	SpaceAfter=Yes|Offset=36
+8	11	11	NUM	_	NumType=Card	7	nmod	_	SpaceAfter=Yes|Offset=43
+9	février	février	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	SpaceAfter=Yes|Offset=46
+10	2023	2023	NUM	_	NumType=Card	9	nmod	_	SpaceAfter=No|Offset=54
+11	,	,	PUNCT	_		33	punct	_	SpaceAfter=Yes|Offset=58
+12	entre	entrer	ADP	_		14	case	_	SpaceAfter=Yes|Offset=60
+13	963000	963000	NUM	_	NumType=Card	14	nummod	_	SpaceAfter=Yes|Offset=66
+14	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	33	nsubj:pass	_	SpaceAfter=Yes|Offset=73
+15	(	(	PUNCT	_		14	punct	_	SpaceAfter=No|Offset=83
+16	selon	selon	ADP	_		18	case	_	SpaceAfter=Yes|Offset=84
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	SpaceAfter=Yes|Offset=90
+18	ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	SpaceAfter=Yes|Offset=93
+19	de	de	ADP	_		20	case	_	SpaceAfter=Yes|Offset=103
+20	l’	l	DET	_	Definite=Def|Number=Sing|PronType=Art	18	nmod	_	SpaceAfter=No|Offset=106
+21	Intérieur	intérieur	ADJ	_	Gender=Masc|Number=Sing	20	amod	_	SpaceAfter=No|Offset=108
+22	)	)	PUNCT	_		18	punct	_	SpaceAfter=Yes|Offset=117
+23	et	et	CCONJ	_		25	cc	_	SpaceAfter=Yes|Offset=119
+24	2,5	2,5	NUM	_	NumType=Card	25	nummod	_	SpaceAfter=Yes|Offset=122
+25	millions	million	NOUN	_	Gender=Masc|NumType=Card|Number=Plur	14	conj	_	SpaceAfter=Yes|Offset=126
+26	(	(	PUNCT	_		25	punct	_	SpaceAfter=No|Offset=135
+27	selon	selon	ADP	_		29	case	_	SpaceAfter=Yes|Offset=136
+28	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	29	det	_	SpaceAfter=Yes|Offset=142
+29	syndicats	syndicat	NOUN	_	Gender=Masc|Number=Plur	25	nmod	_	SpaceAfter=No|Offset=146
+30	)	)	PUNCT	_		25	punct	_	SpaceAfter=Yes|Offset=155
+31	s’	s	PRON	_	Person=3|Reflex=Yes	33	nsubj:pass	_	SpaceAfter=No|Offset=157
+32	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	33	aux:pass	_	SpaceAfter=Yes|Offset=159
+33	rassemblées	rassembler	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	ROOT	_	SpaceAfter=Yes|Offset=167
+34	partout	partout	ADV	_		33	advmod	_	SpaceAfter=Yes|Offset=179
+35	en	en	ADP	_		36	case	_	SpaceAfter=Yes|Offset=187
+36	France	France	PROPN	_	Gender=Fem|Number=Sing	33	obl:arg	_	SpaceAfter=No|Offset=190
+37	.	.	PUNCT	_		33	punct	_	SpaceAfter=No|Offset=196
+38	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	39	det	_	SpaceAfter=Yes|Offset=198
+39	organisations	organisation	NOUN	_	Gender=Fem|Number=Plur	45	nsubj	_	SpaceAfter=Yes|Offset=202
+40	syndicales	syndical	ADJ	_	Gender=Fem|Number=Plur	39	amod	_	SpaceAfter=Yes|Offset=216
+41	professionnelles	professionnel	NOUN	_	Gender=Fem|Number=Plur	39	amod	_	SpaceAfter=Yes|Offset=227
+42	et	et	CCONJ	_		44	cc	_	SpaceAfter=Yes|Offset=244
+43	de	de	ADP	_		44	case	_	SpaceAfter=Yes|Offset=247
+44	jeunesse	jeunesse	NOUN	_	Gender=Fem|Number=Sing	41	conj	_	SpaceAfter=Yes|Offset=250
+45	continuent	continuer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	SpaceAfter=Yes|Offset=259
+46	leurs	leur	DET	_	Number=Plur|Poss=Yes	47	det	_	SpaceAfter=Yes|Offset=270
+47	actions	action	NOUN	_	Gender=Fem|Number=Plur	45	obj	_	SpaceAfter=Yes|Offset=276
+48	d’	d	ADP	_		47	amod	_	SpaceAfter=No|Offset=284
+49	information	information	NOUN	_	Gender=Fem|Number=Sing	47	appos	_	SpaceAfter=Yes|Offset=286
+50	et	et	CCONJ	_		52	cc	_	SpaceAfter=Yes|Offset=298
+51	de	de	ADP	_		52	case	_	SpaceAfter=Yes|Offset=301
+52	conviction	conviction	NOUN	_	Gender=Fem|Number=Sing	49	conj	_	SpaceAfter=Yes|Offset=304
+53	pour	pour	ADP	_		54	mark	_	SpaceAfter=Yes|Offset=315
+54	élargir	élargir	VERB	_	VerbForm=Inf	52	acl	_	SpaceAfter=Yes|Offset=320
+55	encore	encore	ADV	_		54	advmod	_	SpaceAfter=Yes|Offset=328
+56	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	57	det	_	SpaceAfter=Yes|Offset=335
+57	mouvement	mouvement	ADV	_		54	obj	_	SpaceAfter=Yes|Offset=338
+58	social	social	PROPN	_		57	amod	_	SpaceAfter=No|Offset=348
+59	.	.	PUNCT	_		45	punct	_	SpaceAfter=No|Offset=354
+60	Ainsi	ainsi	ADV	_		64	advmod	_	SpaceAfter=No|Offset=356
+61	,	,	PUNCT	_		64	punct	_	SpaceAfter=Yes|Offset=361
+62	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	63	det	_	SpaceAfter=Yes|Offset=363
+63	syndicats	syndicat	NOUN	_	Gender=Masc|Number=Plur	64	nsubj	_	SpaceAfter=Yes|Offset=367
+64	entendent	entendre	ADV	_		0	ROOT	_	SpaceAfter=Yes|Offset=377
+65	se	se	PRON	_	Person=3|Reflex=Yes	66	expl:comp	_	SpaceAfter=Yes|Offset=387
+66	saisir	saisir	VERB	_	VerbForm=Inf	64	xcomp	_	SpaceAfter=Yes|Offset=390
+67	du	de	ADP	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	68	case	_	SpaceAfter=Yes|Offset=397
+68	8	8	NUM	_	NumType=Card	66	obl:arg	_	SpaceAfter=Yes|Offset=400
+69	mars	mars	NOUN	_	Gender=Masc|Number=Sing	68	nmod	_	SpaceAfter=No|Offset=402
+70	,	,	PUNCT	_		71	punct	_	SpaceAfter=Yes|Offset=406
+71	journée	journée	NOUN	_	Gender=Fem|Number=Sing	68	conj	_	SpaceAfter=Yes|Offset=408
+72	internationale	international	ADJ	_	Gender=Fem|Number=Sing	71	amod	_	SpaceAfter=Yes|Offset=416
+73	de	de	ADP	_		74	case	_	SpaceAfter=Yes|Offset=431
+74	lutte	lutte	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	71	nmod	_	SpaceAfter=Yes|Offset=434
+75	pour	pour	ADP	_		77	case	_	SpaceAfter=Yes|Offset=440
+76	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	77	det	_	SpaceAfter=Yes|Offset=445
+77	droits	droit	NOUN	_	Gender=Masc|Number=Plur	74	nmod	_	SpaceAfter=Yes|Offset=449
+78	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	79	case	_	SpaceAfter=Yes|Offset=456
+79	femmes	femme	NOUN	_	Gender=Fem|Number=Plur	77	nmod	_	SpaceAfter=No|Offset=460
+80	,	,	PUNCT	_		81	punct	_	SpaceAfter=Yes|Offset=466
+81	«	«	ADJ	_	Number=Sing	68	conj	_	SpaceAfter=Yes|Offset=468
+82	pour	pour	ADP	_		83	mark	_	SpaceAfter=Yes|Offset=470
+83	rendre	rendre	VERB	_	VerbForm=Inf	66	advcl	_	SpaceAfter=Yes|Offset=475
+84	visibles	visible	ADJ	_	Gender=Fem|Number=Plur	83	xcomp	_	SpaceAfter=Yes|Offset=482
+85	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	86	det	_	SpaceAfter=Yes|Offset=491
+86	conséquences	conséquence	NOUN	_	Gender=Fem|Number=Plur	83	obj	_	SpaceAfter=Yes|Offset=495
+87	particulièrement	particulièrement	ADV	_		88	advmod	_	SpaceAfter=Yes|Offset=508
+88	graves	grave	ADJ	_	Number=Plur	86	amod	_	SpaceAfter=Yes|Offset=525
+89	de	de	ADP	_		91	case	_	SpaceAfter=Yes|Offset=532
+90	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	91	det	_	SpaceAfter=Yes|Offset=535
+91	projet	projet	NOUN	_	Gender=Masc|Number=Sing	86	nmod	_	SpaceAfter=Yes|Offset=538
+92	pour	pour	ADP	_		94	case	_	SpaceAfter=Yes|Offset=545
+93	elles	lui	PRON	_	Gender=Fem|Number=Plur|Person=3	94	nsubj:pass	_	SpaceAfter=Yes|Offset=550
+94	»	»	PUNCT	_		64	advcl	_	SpaceAfter=No|Offset=556
+95	.	.	PUNCT	_		64	punct	_	SpaceAfter=Yes|Offset=557
+96	De	de	ADP	_		98	det	_	SpaceAfter=Yes|Offset=559
+97	nombreuses	nombreux	ADJ	_	Gender=Fem|Number=Plur	98	amod	_	SpaceAfter=Yes|Offset=562
+98	voix	voix	ADJ	_	Gender=Masc|Number=Sing	101	nsubj:pass	_	SpaceAfter=Yes|Offset=573
+99	s’	s	PRON	_	Person=3|Reflex=Yes	101	aux:tense	_	SpaceAfter=No|Offset=578
+100	étaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	101	aux:pass	_	SpaceAfter=Yes|Offset=580
+101	élevées	élevé	ADJ	_	Gender=Fem|Number=Plur	0	ROOT	_	SpaceAfter=Yes|Offset=588
+102	pour	pour	ADP	_		103	mark	_	SpaceAfter=Yes|Offset=596
+103	dénoncer	dénoncer	VERB	_	VerbForm=Inf	101	advcl	_	SpaceAfter=Yes|Offset=601
+104	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	105	det	_	SpaceAfter=Yes|Offset=610
+105	réforme	réforme	NOUN	_	Gender=Fem|Number=Sing	103	obj	_	SpaceAfter=Yes|Offset=614
+106	injuste	injuste	ADJ	_	Number=Sing	105	amod	_	SpaceAfter=Yes|Offset=622
+107	envers	envers	NOUN	_	Gender=Masc|Number=Plur	105	amod	_	SpaceAfter=Yes|Offset=630
+108	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	109	det	_	SpaceAfter=Yes|Offset=637
+109	femmes	femme	NOUN	_	Gender=Fem|Number=Plur	107	obj	_	SpaceAfter=No|Offset=641
+110	,	,	PUNCT	_		111	punct	_	SpaceAfter=Yes|Offset=647
+111	jugées	juger	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	101	conj	_	SpaceAfter=Yes|Offset=649
+112	même	même	ADV	_		114	advmod	_	SpaceAfter=Yes|Offset=656
+113	grandes	grand	ADJ	_	Gender=Fem|Number=Plur	114	amod	_	SpaceAfter=Yes|Offset=661
+114	perdantes	perdant	NOUN	_	Number=Plur	111	obj	_	SpaceAfter=Yes|Offset=669
+115	de	de	ADP	_		117	case	_	SpaceAfter=Yes|Offset=679
+116	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	117	det	_	SpaceAfter=Yes|Offset=682
+117	réforme	réforme	NOUN	_	Gender=Fem|Number=Sing	114	nmod	_	SpaceAfter=Yes|Offset=685
+118	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	119	case	_	SpaceAfter=Yes|Offset=693
+119	retraites	retraite	NOUN	_	Gender=Fem|Number=Plur	117	nmod	_	SpaceAfter=No|Offset=697
+120	.	.	PUNCT	_		101	punct	_	SpaceAfter=No|Offset=706
