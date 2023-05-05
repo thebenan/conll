@@ -7,13 +7,11 @@ class ConllStrSpacyClass:
     """
     classe permettant de remplir les colonnes  du format CoNLL-U en utilisante spacy
 
-    Attributes:
-    ----------
-    custom_tokenizer (callable): fonction lambda qui prend un texte en entrée et renvoie un objet Doc,
+    Méthodes:
+    
+    custom_tokenizer (nlp): fonction lambda qui prend un texte en entrée et renvoie un objet Doc,
         cette fonction est utilisée pour faire fonctionner la méthode `fill_head_deprel_spacy`
 
-    Méthodes:
-    -------
     fill_lemma_str_spacy(conll_string: str, model: str) -> str:
         remplit la colonne 3 LEMMA du fichier conllu en utilisant spacy
         
@@ -22,6 +20,7 @@ class ConllStrSpacyClass:
 
     fill_feat_str_spacy(conll_string: str, model: str) -> str:
         remplit la colonne 6 FEAT du fichier conllu en utilisant spacy
+    
     fill_head_deprel_spacy(conll_string: str, model: str) -> str:
         remplit les colonnes HEAD (7) et DEPREL (8) du fichier conllu en utilisant spacy
     """
@@ -30,9 +29,10 @@ class ConllStrSpacyClass:
     
     def custom_tokenizer(nlp):
         """
-        FONCTION DE YIMI //// ce n'est pas ma fonction 
+        FONCTION DE MINGTAO //// ce n'est pas ma fonction
         -> utilisé seulement pour faire marcher correctement la fonction `fill_head_deprel_spacy`
             (je n'ai pas trouvé d'autres solutions)
+
         retourne une fonction lambda qui prend un texte en entrée et renvoie un objet Doc
 
         Args:
@@ -189,6 +189,8 @@ class ConllStrSpacyClass:
                 feat = doc[0].morph
                 # remplacement du champ FEAT par le features
                 token[5] = feat
+            elif token:
+                token[5] = "_"
 
         # création de la chaîne de caractères CoNLL-U avec les tokens modifiés
         conll_lines = []
@@ -255,27 +257,9 @@ class ConllStrSpacyClass:
     ##################
 
     
-    def write_conll_file(conll_string: str, output_file: str) -> bool:
-        """
-        écrit le contenu d'une string au format CoNLL-U dans un fichier
-
-        input:
-            - conll_string (str): contenu du fichier CoNLL-U
-            - output_file (str): nom du fichier de sortie
-
-        output:
-            bool: True si l'écriture du fichier a réussi, False sinon
-        """
-        try:
-            with open(output_file, "w") as f:
-                f.write(conll_string)
-            return True
-        except Exception as e:
-            print(f"Erreur lors de l'écriture du fichier {output_file}: {e}")
-            return False
 
 
-
+# main 
 if __name__ == "__main__":
     xml_file = "test.xml"
     xpath_formula = "./sentence"
@@ -298,5 +282,4 @@ if __name__ == "__main__":
     print("\nLes colonnes HEAD et DEPREL remplie : \n\n")
     print(conll_str_dep)
     
-    ConllStrSpacyClass.write_conll_file(conll_str_dep,"conll_by_spacy.conllu")
 
